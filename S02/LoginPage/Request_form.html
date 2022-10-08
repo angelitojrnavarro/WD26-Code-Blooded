@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="reqbody">
+                        <div class="title-head">ABC Company IT Support Request Form</div>
+        <div class="container">
+            <!-- <div class="heading"> ABC Company IT Support Request Form</div> -->
+                 <form action="#">
+
+                    <div class="request-details">
+
+                        <div class="request-box">
+                            
+                            <label for="fname">First Name</label> <br>
+                            <input type="text" id="fname" class="fname">
+                        </div>
+
+                        <div class="request-box">
+                            <label for="lname">Last Name</label> <br>
+                            <input type="text" id="lname" class="lname">
+                        </div>
+
+                        <div class="request-box">
+                            <label for="emailAddress">Email Address</label> <br>
+                            <input type="email" id="emailAddress" class="emailAddress">
+                        </div>
+
+                        <div class="request-box">
+                            <label for="contactNumber">Contact Number</label> <br>
+                            <input type="text" id="contactNumber" class="contactNumber">
+                        </div>
+
+                    <!-- </div> -->
+
+                        <div class="work">
+                            <div class="options">
+                            <input type="radio" name="Onsite"> Onsite
+                            <input type="radio" name="Onsite"> Work from home
+                        </div>
+                            <p><span>Location:</span></p>
+                            <p>For onsite, please state your Workstation No., Department, Floor and Building.<br> For work from home, please complete your address and include a landmark nearestt to your location.</p>
+                       
+                         <!-- <div class="commnt"> -->
+                            <div class="loc">
+                            <input type="comment">
+                        </div>
+                        <!-- </div> -->
+
+                        </div>
+
+                        <div class="service-type">
+                            <h1>Service Request</h1>
+                            <div class="request-type">
+                                <select name="types" size="8" multiple="multiple">
+                                        <option value="opt1">Desktop/Laptop Setup</option>
+                                        <option value="opt2">Desktop/Laptop Support</option>
+                                        <option value="opt3">Desktop/Laptop Maintenance</option>
+                                        <option value="opt4">Software Installation</option>
+                                        <option value="opt5">Software Support</option>
+                                        <option value="opt6">Computer Peripheral Setup</option>
+                                        <option value="opt7">Peripheral Troubleshooting</option>
+                                        <option value="opt8">Computer Peripheral Maintenance</option>
+
+                                </select>
+                                <h2>Request Description</h2>
+
+                                <div class="description">
+                                    <textarea name="description" id="description" cols="30" rows="10">Explain your service request as details as possible</textarea>
+                                    <!-- <textarea rows="4" cols="50" name="comment" form="usrform">
+                                        Enter text here...</textarea> -->
+                                </div>
+                                <p>Upload a picture/screenshot for reference. <input type ="file"></p>
+
+                                <div class="button">
+                                    <button class="reqbtn" onclick="alert('Thanks for submitting your request')">Submit</button>
+                                    <button class="reqbtn2" type="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                 </form>
+
+        </div>
+        <div class="end"></div>
+</body>
+</html>
