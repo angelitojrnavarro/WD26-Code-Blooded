@@ -3,34 +3,74 @@
     margin: 0;
 }
 
-div{
+.div1{
+    position: absolute;
+    left: 20px;
+    top: 20px;
     border: 1px solid black;
     height: 500px;
     width: 150px;
    
 }
-.div1{
-    position: absolute;
-    left: 20px;
-    top: 20px;
- 
-}
 .div2{
     position: absolute;
     left: 200px;
     top: 20px;
- 
+    border: 1px solid black;
+    height: 500px;
+    width: 150px;
+   
 }
 .div3{
     position: absolute;
     left: 380px;
     top: 20px;
+    border: 1px solid black;
+    height: 500px;
+    width: 150px;
    
 }
 .div4{
     position: absolute;
     left: 565px;
     top: 20px;
- 
+    border: 1px solid black;
+    height: 500px;
+    width: 150px;
+   
 }
 
+.wrapper{
+    border: 1px solid red;
+    position: absolute;
+    height: 190px;
+    width: 695px;
+    top: 550px;
+    left: 20px;
+}
+.logo{
+    border: 1px solid red;
+    position: absolute;
+    height: 90px;
+    width: 350px;
+    top: 10px;
+    left: 10px;
+}
+
+.topMenu{
+    border: 1px solid red;
+    position: absolute;
+    height: 25px;
+    width: 180px;
+    top: 10px;
+    left: 505px;
+}
+
+.menu{
+    border: 1px solid red;
+    position: absolute;
+    height: 25px;
+    width: 385px;
+    left: 300px;
+    top: 150px;
+}
