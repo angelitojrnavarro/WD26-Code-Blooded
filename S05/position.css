@@ -1,0 +1,60 @@
+.staticPosition{
+    border: 2px solid #7a08ff;
+    /* top: 10px; top, bottom, left and right are not working because this is set as default */
+}
+
+.relativePosition{
+position: relative;
+border: 2px solid blue;
+left: 150px;
+/* bottom: 20px; */
+left: 150px;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+}
+
+
+
+img .relativePosition{
+    top:300px
+}
+
+.absolutePosition{
+    position: absolute;
+    border: 2px solid #ad7c01;
+    width: 300px;
+    top: 320px;
+}
+
+.fixedPosition{
+    position: fixed;
+    border: 2px solid red;
+    top: 360px;
+
+}
+
+.stickyPosition{
+    /* position: -webkit-sticky; for safari */
+    position: sticky;
+    border: 3px solid black;
+    top: 50px;
+    left: 20px;
+    padding: 5px;
+}
+
+/* for images */
+
+img .staticPosition{
+
+    /* position: static;  even it is not declare it will still show the same position because it is default in nature */
+    border: 3px solid pink;
+}
+
+.buttonClick{
+    position: fixed;
+    top: 830px;
+    margin-left: 20px;
+}

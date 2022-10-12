@@ -1,0 +1,36 @@
+.{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    border: 1px solid black;
+    height: 500px;
+    width: 150px;
+   
+}
+.div1{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+ 
+}
+.div2{
+    position: absolute;
+    left: 200px;
+    top: 20px;
+ 
+}
+.div3{
+    position: absolute;
+    left: 380px;
+    top: 20px;
+   
+}
+.div4{
+    position: absolute;
+    left: 565px;
+    top: 20px;
+ 
+}
+
