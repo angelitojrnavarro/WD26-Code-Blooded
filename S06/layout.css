@@ -1,0 +1,76 @@
+/* 
+Media query 
+    -CSS3 feature that makes a webpage adapt its layout to different screen size and mdeia types in its layout
+
+    Syntax::
+        @media media type and (condition: breakpoint){
+            CSS Rules
+        }
+
+        @media (Media Rule) - used to specify target media types.
+
+        Parenthesis - where we set the condition
+
+        media type - it follows the media rule it selects or choose sizes
+
+        -- concatenate (joins the statement) using the "and" keyword
+
+        Breakpoints - it is a key to determine when to change the layout and adapt the new rules inside the query.
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.left{
+    background-color: #2196f3;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+.main{
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 60%;
+}
+.right{
+    background-color: #04aa6d;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+/* for desktop */
+
+ @media screen and (min-width: 1024px){
+.left, .main, .right{
+    width: 100%; 
+    height: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .main{
+        position: fixed;
+        width: 100%;
+        top: 100px;
+    }
+    .left{
+        width: 50%;
+        position: relative;
+        top: 100px;
+    }
+
+    .righ {
+        position: relative;
+        left: 1px;
+        width: 50%;
+        top: 100px;
+    }
+
+    
+} 

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --yellow:#f9ca24;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* -----------------scroll bar start-------------- */
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+/* -----------------scroll bar end--------------- */
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+/* -----------------User Image------------------ */
+header .lito-user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+/* -----------------User name------------------ */
+header .lito-user .lito-name{
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+/* -----------------Title------------------ */
+header .lito-user .lito-title{
+    font-size: 2rem;
+    color:#eee;
+}
+/* -----------------Nav Bar Start------------------- */
+header .lito-navbar{
+    width:100%;
+}
+
+header .lito-navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+header .lito-navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .lito-navbar ul li a:hover{
+    background:var(--yellow);
+}
+
+/* -----------------Nav bar end---------------- */
+
+#lito-menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.lito-home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+/*---------------- Home section start ------------*/
+.lito-home h3{
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.lito-home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.lito-home h1 span{
+    color:var(--yellow);
+}
+
+.lito-home p{
+    font-size:2rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+/*---------------- Home section end ------------*/
+
+/*---------------- Button start ------------*/
+.lito-btn{
+    padding:.7rem 3rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+/*---------------- Button end ------------*/
+
+
+
+
+
+
+
+
+
+.lito-top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #1a1a1a;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
+}
