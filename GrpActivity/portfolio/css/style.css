@@ -9,8 +9,6 @@
     outline: none; border:none;
     text-transform: capitalize;
     transition: all .2s linear;
-    /* font-size: 62.5%;
-    overflow-x: hidden; */
 }
 
 html{
@@ -52,7 +50,7 @@ section{
 #menu{
     position: fixed;
     top:2rem; right:2rem;
-    background:#333;
+    background:#311432;
     color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
@@ -164,17 +162,17 @@ header .navbar ul li a:hover{
     box-shadow: 2px 1px 10px #ffffff;
 }
 
-/* #menu{
+#menu{
     position: fixed;
     top:2rem; right:2rem;
-    background:#981d26;
-    color:#ece6c2;
+    background:#0e0d0d;
+    color:white;
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
     z-index: 1000;
     display: none;
-} */
+}
 
 
 /*------------------------ Section Alignment Settings---------------------*/
@@ -185,6 +183,14 @@ header .navbar ul li a:hover{
     flex-flow: column;
     padding:0 15rem;
 }
+
+/* .projects{                          
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    top: 5000px;
+    padding:0 15rem;
+} */
 
 /*------------------------ Home Section ------------------------------*/
 
@@ -238,7 +244,7 @@ header .navbar ul li a:hover{
 
 .about .row .info ul{
     font-size: 2rem;
-    color: #e5a632;
+    color: white;
     padding:1rem 0;
     font-weight: normal;
 }
@@ -251,13 +257,6 @@ header .navbar ul li a:hover{
     
 }
 
-.about .row .counter{
-    flex:1 1 48rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .about .row .counter .box{
     width:20rem;
     background:#222;
@@ -266,10 +265,6 @@ header .navbar ul li a:hover{
     margin:2rem;
 }
 
-/* .about .row .counter .box span{
-    font-size: 4rem;
-    color:#e5a632; */
-}
 
 .about .row .counter .box h3{
     font-size: 2rem;
@@ -367,7 +362,7 @@ header .navbar ul li a:hover{
 }
 
 .projects .box-container .box{
-    width:30rem;
+    width: 30rem;
     margin:4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid white;
@@ -393,6 +388,7 @@ header .navbar ul li a:hover{
     font-size: 1.4rem;
     color:#eee;
     padding: 1rem 0;
+    text-align: justify;
 }
 
 .projects .box-container .box:hover p{
