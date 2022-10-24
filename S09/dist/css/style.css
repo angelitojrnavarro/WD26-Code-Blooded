@@ -1,0 +1,10 @@
+.table {
+  background-color: blanchedalmond;
+  border: 3px;
+}
+
+.text-primary {
+  background: darkgray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

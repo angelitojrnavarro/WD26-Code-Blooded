@@ -1,0 +1,140 @@
+$radius: 4px;
+$bgColorLi: red;
+$bgColorLiAfter: #7289B6;
+
+@mixin transition{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+
+@mixin icon{
+    border-radius: 50%;
+}
+
+@mixin reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    @include reset;
+}
+.navbar {
+    width: 100%;
+    margin: 0px auto;
+
+    & ul li {
+        display: block;
+        height: 40px;
+        width: 200px;
+        margin-bottom: 3px;
+        position: relative;
+        border-radius: $radius;
+       
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & a {
+            color: #fff;
+            padding-left: 15%;
+            display: block;
+            height: 100%;
+            font-size: 24px;
+            line-height: 42px;
+            text-decoration: none;
+            position: absolute;
+            text-align: center;
+            z-index:1;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $bgColorLiAfter;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            @include transition;
+            border-top-left-radius: $radius;
+            border-bottom-left-radius: $radius;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: $bgColorLiAfter;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            z-index: 0;
+            @include transition;
+            border-top-right-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }
+
+        &:hover:before {
+            width: 10px;
+            left: -10px;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
+
+
+p img{
+    @include icon;
+    margin-left: 5px;
+}
+
+.col-md-6 div{
+    margin-bottom: 10px;
+}
+
+ .row .col{
+margin: auto;
+} 
+
+.row .socialMedia h4{
+    display: block;
+}
+
+.socialMedia{
+    display: block;
+}
+
+.socialMedia p{
+display: flex;
+justify-content: flex-start;
+margin-left: 28px;
+margin-bottom: 20px;
+}
+.col .mb-3 .btnWarp{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+
+
+.socialMedia img{
+    @include icon;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Forms .form-label{
+    display: flex;
+}
