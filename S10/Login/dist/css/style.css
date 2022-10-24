@@ -1,0 +1,65 @@
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: #c7c9cc;
+  display: flex;
+}
+
+section form {
+  background-color: white;
+  height: min-content;
+  width: 380px;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+section form h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+section form p {
+  color: #c7c9cc;
+}
+
+section form span {
+  cursor: pointer;
+}
+
+section form .mb-1 .form-label {
+  font-size: 1rem;
+}
+
+section form .btn {
+  margin-top: 10px;
+  width: 115px;
+  border-radius: 20px;
+}
+
+section form .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+section form .btnHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section form .btnHolder p {
+  font-size: 0.8rem;
+  margin: auto;
+  cursor: pointer;
+}
+
+section form .loginWith .icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section form .loginWith .icon img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
