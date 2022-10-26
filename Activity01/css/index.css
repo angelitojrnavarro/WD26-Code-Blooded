@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #800000;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0px auto;
+}
+
+header .navbar {
+  background-color: yellow;
+  border-bottom: 4px solid whitesmoke;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+header .navbar .container .navbar-brand {
+  font-size: 3rem;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  background-color: yellow;
+  border-top: 4px solid whitesmoke;
+}/*# sourceMappingURL=index.css.map */

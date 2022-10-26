@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap');
+
+$navbarBg: yellow;
+$bodyBg: #800000;
+$footerBg: yellow;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bodyBg;
+
+}
+.navbar {
+    width: 100%;
+    margin: 0px auto;
+  }
+header .navbar{
+    background-color: $navbarBg;
+    border-bottom: 4px solid whitesmoke;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+header .navbar .container .navbar-brand{
+    font-size: 3rem;
+
+}
+
+
+
+// ------------slider carousel----------------
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: $footerBg;
+    border-top: 4px solid whitesmoke;
+    // border-top-left-radius: 30px;
+    // border-top-right-radius: 30px;
+
+}
