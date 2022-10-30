@@ -1,39 +1,340 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap");
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-  background-color: #800000;
-}
-
-.navbar {
   width: 100%;
-  margin: 0px auto;
-}
-
-header .navbar {
-  background-color: yellow;
-  border-bottom: 4px solid whitesmoke;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-header .navbar .container .navbar-brand {
-  font-size: 3rem;
-}
-
-.carousel-item {
   height: 100vh;
-  min-height: 300px;
-  background: no-repeat scroll center scroll;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-color: maroon;
 }
 
-footer {
+#navbar-bg {
   background-color: yellow;
-  border-top: 4px solid whitesmoke;
+  box-shadow: 0px -9px 4px 10px black;
+  border-bottom: 4px solid white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+#brandLogo {
+  font-size: 25px;
+  color: black;
+  text-shadow: 1px 1px 1px black;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#brandLogo img {
+  margin-bottom: 10px;
+}
+
+#brandLogo span {
+  color: red;
+}
+
+.navbar-nav {
+  margin-left: 100px;
+}
+
+.nav-link {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: 0.6s ease;
+}
+
+.nav-link:hover {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+#btn a {
+  text-decoration: none;
+}
+
+#btn button {
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  border-radius: 5px;
+  border-radius: 1px solid black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#btn .fas {
+  margin-left: 5px;
+  color: black;
+}
+
+#btn button:hover {
+  background-color: red;
+  color: white;
+}
+
+#btn .fas:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #brandLogo {
+    font-size: 18px;
+  }
+  #brandLogo span {
+    font-size: 18px;
+  }
+  #btn button {
+    margin-top: 15px;
+  }
+  #category .col img {
+    height: 250px;
+    width: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-nav {
+    margin-left: 10px;
+  }
+  #btn button {
+    margin-top: 15px;
+  }
+  #category .col img {
+    height: 420px;
+    width: 410px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1338px) {
+  #btn {
+    margin-right: 40px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  #btn button {
+    width: 90px;
+    height: 25px;
+    font-size: 15px;
+  }
+  #btn .fas {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+}
+.carousel-item {
+  height: 52rem;
+}
+
+#category h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 2px black;
+  color: white;
+}
+
+#category h1 span {
+  color: yellow;
+}
+
+.col img {
+  height: 420px;
+  width: 550px;
+  box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  margin-bottom: 50px;
+}
+
+.feturedProduct {
+  background-color: whitesmoke;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.feturedProduct #feturedProducts h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 2px black;
+  color: red;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.feturedProduct #feturedProducts span {
+  color: yellow;
+}
+
+.checked {
+  color: red;
+}
+
+#feturedProducts .card-body p {
+  font-family: "Yantramanav", sans-serif;
+}
+
+#feturedProducts .card:hover img {
+  opacity: 0.5;
+}
+
+#delivery h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 2px black;
+  color: white;
+}
+
+#delivery h3 {
+  color: white;
+  font-family: "Yantramanav", sans-serif;
+}
+
+#delivery h1 span {
+  color: yellow;
+}
+
+#delivery .col img {
+  height: 400px;
+  width: 420px;
+  box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  margin: 50px 0;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.8s ease;
+  border-radius: 20px;
+  border: 5px solid yellow;
+}
+
+#delivery .col img:hover {
+  opacity: 1;
+}
+
+.footer {
+  color: black;
+  font-size: 14px;
+  background-color: yellow;
+  border-top: 4px solid white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-top {
+  padding: 30px;
+}
+
+.footer .footer-top .footer-contact h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer .footer-top .footer-contact p {
+  font-family: "Yantramanav", sans-serif;
+}
+
+.footer .footer-top .footer-links h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer .footer-top .footer-links ul li {
+  list-style: none;
+  font-family: "Yantramanav", sans-serif;
+  margin-top: 5px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  font-family: "Yantramanav", sans-serif;
+  color: black;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.footer-links ul li a:hover {
+  font-weight: bold;
+  background-color: red;
+  padding: 0 10px;
+  color: white;
+}
+
+.footer-social h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.social-media h5 {
+  margin-top: 15px;
+}
+
+.footer-social .input-group .btn {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  color: white;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.footer-social .input-group input {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.footer-social .social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  color: white;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.footer .container .copyrigth {
+  background-color: red;
+}
+
+.copyrigthWrapper .copyrigth {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+}
+
+.copyrigthWrapper .copyrigth span {
+  font-weight: bold;
+  color: yellow;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  position: fixed;
+  height: 60px;
+  bottom: 40px;
+  right: 50px;
+  background-color: white;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
