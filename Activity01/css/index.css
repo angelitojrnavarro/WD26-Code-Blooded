@@ -18,6 +18,8 @@ body {
   width: 100%;
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 #brandLogo {
@@ -151,13 +153,12 @@ body {
   color: yellow;
 }
 
-.col img {
-  height: 420px;
-  width: 550px;
-  box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
-  margin-bottom: 50px;
+#category h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+.round-cakes h3 {
+  background-color: whitesmoke;
 }
 
 .feturedProduct {
@@ -166,15 +167,13 @@ body {
   padding: 10px;
 }
 
-.feturedProduct #feturedProducts h1 {
+#feturedProducts h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   text-transform: uppercase;
   text-shadow: -2px 3px 2px black;
   color: red;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .feturedProduct #feturedProducts span {
@@ -189,8 +188,27 @@ body {
   font-family: "Yantramanav", sans-serif;
 }
 
+#feturedProducts .card {
+  cursor: pointer;
+}
+
 #feturedProducts .card:hover img {
   opacity: 0.5;
+}
+
+.card h5, h6 {
+  font-weight: "Yantramanav", sans-serif;
+}
+
+.card .btn {
+  font-family: "Poppins", sans-serif;
+}
+
+.card .card-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
 #delivery h1 {
@@ -219,7 +237,6 @@ body {
   -moz-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
   margin: 50px 0;
   opacity: 0.5;
-  cursor: pointer;
   transition: 0.8s ease;
   border-radius: 20px;
   border: 5px solid yellow;
@@ -257,7 +274,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.footer .footer-top .footer-links ul li {
+.footer-links ul li {
   list-style: none;
   font-family: "Yantramanav", sans-serif;
   margin-top: 5px;
@@ -278,11 +295,15 @@ body {
   color: white;
 }
 
+.footer-links ul li a i {
+  margin-left: 10px;
+}
+
 .footer-social h4 {
   font-family: "Ubuntu", sans-serif;
 }
 
-.social-media h5 {
+.social-media h4 {
   margin-top: 15px;
 }
 
@@ -337,4 +358,9 @@ html {
   right: 50px;
   background-color: white;
   border-radius: 50%;
+  opacity: 0.6;
+}
+
+.arrow:hover {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

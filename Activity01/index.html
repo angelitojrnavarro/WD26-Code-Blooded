@@ -11,7 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- css link -->
-    <link rel="stylesheet" href="/Activity01/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +33,7 @@
         crossorigin="anonymous" />
 
         <!--boxicons css link-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
 
 
         <!-- animation -->
@@ -61,7 +62,7 @@
                     <a class="nav-link" href="#">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUCTS</a>
+                    <a class="nav-link" href="./pages/products.html">PRODUCTS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">PROMOS</a>
@@ -124,138 +125,195 @@
 
 <!-- carousel section end -->
 
-<!-- Categoty Section Start  -->
+
+<!-- Categoty Section Start -->
+
 <section class="category" data-aos="fade-up"
-data-aos-duration="2800">
+data-aos-duration="2800" >
 
-    <div class="container-fluid text-center" id="category" data-aos="fade-up"
-    data-aos-duration="2800">
-        <h1 class="mt-5 mb-5">Product <span> Gategories </span></h1>
-        <div class="row">
-          <div class="col">
-            <img src="./img/cake.webp" alt="">
-            
-          </div>
-          <div class="col">
-            <img src="./img/cake.webp" alt="">
-            
-          </div>
-          <div class="col">
-            <img src="./img/cake.webp" alt="">
-            
-          </div>
-        </div>
-      </div>
+  <div class="container text-center mt-5" id="category" data-aos="fade-up"
+  data-aos-duration="2800">
+
+  <h1 class="mt-5 mb-5">Our <span> products </span></h1>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card h-100" id="roundCakes" >
+                  <img src="./img/index/roundCakes2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Round Cakes</h5>
+                    <!-- <p class="card-text"><button type="button" class="btn btn-primary">Primary</button></p> -->
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><a href="./pages/products.html"><button type="button" class="btn btn-primary">More</button></a></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col">
+                <div class="card h-100" id="squareCakes">
+                  <img src="./img/index/squareCakes2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Square Cakes</h5>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><a href="./pages/products.html#roundCake"><button type="button" class="btn btn-primary">More</button></a></p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card h-100" id="rollCakes">
+                  <img src="./img/index/rollCakes2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Roll Cakes</h5>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><a href="./pages/products.html#squareCakes"><button type="button" class="btn btn-primary">More</button></a></p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./img/index/pastries2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pastries</h5>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><a href="./pages/products.html#pastries"><button type="button" class="btn btn-primary">More</button></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
 </section>
-<!-- Category Section end  -->
 
+
+<!-- Categoty Section Start -->
 
 <!-- featured products start -->
 
   <section class="feturedProduct" data-aos="fade-up"
   data-aos-duration="2800">
 
-        <div class="container text-center" id="feturedProducts" data-aos="fade-up"
+        <div class="container" id="feturedProducts" data-aos="fade-up"
         data-aos-duration="2800">
-            <h1>FEATURED <span>PRODUCTS</span></h1>
+        <div class="title text-center">
+          <h1 class="mt-5 mb-5">best <span> seller </span></h1>
+        </div>
                 <div class="row">
                   <div class="owl-carousel owl-theme">
 
-                    <div class="item mb-4">
-                        <div class="card shadow">
-                            <img src="./img/foodpanda.jpg" alt="" class="card-img-top">
+                    <div class="item mb-4 h-100">
+                        <div class="card shadow h-100" id="blackForest">
+                            <img src="./img/index/best-black-forest.jpg" alt="" class="card-img-top">
                             <div class="card-body text-center">                         
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h5>Black Forrest</h5>
+                                <h6>₱500.00</h6>
                                 <div class="star text-center"></div>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
                             </div>
                             <div class="card-footer">
-                              Card footer
+                              <button type="button" class="btn btn-primary">Buy</button>
+                              <button type="button" class="btn btn-warning">Add to Cart</button>
                             </div>   
                           </div>
                     </div>
                   <!-- item ends -->
 
-                  <div class="item mb-4">
-                    <div class="card shadow">
-                        <img src="./img/mangan.jpg" alt="" class="card-img-top">
-                        <div class="card-body">   
-                          <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="item mb-4 h-100">
+                    <div class="card shadow h-100">
+                        <img src="./img/index/best-brownies.jpg" alt="" class="card-img-top">
+                        <div class="card-body text-center">   
+                          <h5>Brownies</h5>
+                          <h6>₱500.00</h6>
                                 <div class="star text-center"></div>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
                         </div>
 
                         <div class="card-footer">
-                          Card footer
+                          <button type="button" class="btn btn-primary">Buy</button>
+                          <button type="button" class="btn btn-warning">Add to Cart</button>
                         </div>   
 
                       </div>
                 </div>
                <!-- item ends -->
                
-               <div class="item mb-4">
-                <div class="card shadow">
-                    <img src="./img/grabfood.png" alt="" class="card-img-top">
-                    <div class="card-body">
-                      <p>Lorem ipsum dolor sit amet.</p>
-                                <div class="star text-center"></div>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
+               <div class="item mb-4 h-100">
+                <div class="card shadow h-100">
+                    <img src="./img/index/best-caramel.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5>Caramel Crunch</h5>
+                      <h6>₱500.00</h6>
+                      <div class="star text-center"></div>
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star checked"></i>
+                      <i class="fa fa-star checked"></i>
                     </div>
 
                     <div class="card-footer">
-                      Card footer
+                      <button type="button" class="btn btn-primary">Buy</button>
+                      <button type="button" class="btn btn-warning">Add to Cart</button>
                     </div>   
 
                   </div>
             </div>
            <!-- item ends -->
 
-           <div class="item mb-4">
-            <div class="card shadow">
-                <img src="./img/foodpanda.jpg" alt="" class="card-img-top">
-                <div class="card-body">                         
-                  <p>Lorem ipsum dolor sit amet.</p>
+           <div class="item ">
+            <div class="card shadow h-100">
+                <img src="./img/index/best-cookies-and-cream.jpg" alt="" class="card-img-top">
+                <div class="card-body text-center">                         
+                  <h5>Cookies and Cream</h5>
+                  <h6>₱500.00</h6>
                   <div class="star text-center"></div>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
                 </div>
                 <div class="card-footer">
-                  Card footer
+                  <button type="button" class="btn btn-primary">Buy</button>
+                  <button type="button" class="btn btn-warning">Add to Cart</button>
                 </div>   
               </div>
         </div>
       <!-- item ends -->
 
-      <div class="item mb-4">
-        <div class="card shadow">
-            <img src="./img/mangan.jpg" alt="" class="card-img-top">
-            <div class="card-body">   
-              <p>Lorem ipsum dolor sit amet.</p>
-                 <div class="star text-center"></div>
-                 <i class="bx bxs-star checked"></i>
-                 <i class="bx bxs-star checked"></i>
-                 <i class="bx bxs-star checked"></i>
-                 <i class="bx bxs-star checked"></i>
-                 <i class="bx bxs-star checked"></i>
+      <div class="item mb-4 ">
+        <div class="card shadow ">
+            <img src="./img/index/best-leche-flan.jpg" alt="" class="card-img-top">
+            <div class="card-body text-center">   
+              <h5>Leche Flan Roll</h5>
+              <h6>₱500.00</h6>
+              <div class="star text-center"></div>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
             </div>
 
             <div class="card-footer">
-              Card footer
+              <button type="button" class="btn btn-primary">Buy</button>
+              <button type="button" class="btn btn-warning">Add to Cart</button>
             </div>   
 
           </div>
@@ -264,19 +322,21 @@ data-aos-duration="2800">
    
    <div class="item mb-4">
     <div class="card shadow">
-        <img src="./img/grabfood.png" alt="" class="card-img-top">
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet.</p>
+        <img src="./img/index/best-ensaimada.jpg" alt="" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Cheesy Ensaimada</h5>
+          <h6>₱500.00</h6>
           <div class="star text-center"></div>
-          <i class="bx bxs-star checked"></i>
-          <i class="bx bxs-star checked"></i>
-          <i class="bx bxs-star checked"></i>
-          <i class="bx bxs-star checked"></i>
-          <i class="bx bxs-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
         </div>
 
         <div class="card-footer">
-          Card footer
+          <button type="button" class="btn btn-primary">Buy</button>
+          <button type="button" class="btn btn-warning">Add to Cart</button>
         </div>   
 
       </div>
@@ -296,7 +356,7 @@ data-aos-duration="2800">
 
   <div class="container-fluid text-center" id="delivery">
         <h1 class="mt-5 mb-2">WE <span> DELIVER </span></h1>
-        <h3 class="mb-3">Oreder Through our Delivery Partners:</h3>
+        <h3 class="mb-3">Order Through our Delivery Partners:</h3>
         <div class="row">
           <div class="col" data-aos="flip-left" data-aos-duration="2000">
             <img src="./img/foodpanda.jpg" alt="">
@@ -334,11 +394,11 @@ data-aos-duration="2800">
             <div class="col footer-links" data-aos="flip-up" data-aos-duration="1500">
                 <h4>Links</h4>
                 <ul>
-                  <li><a href="#"><i class="bx bx-chevron-right"></i>HOME</a></li>
-                  <li><a href="#"><i class="bx bx-chevron-right"></i>PRODUCTS</a></li>
-                  <li><a href="#"><i class="bx bx-chevron-right"></i>PROMOS</a></li>
-                  <li><a href="#"><i class="bx bx-chevron-right"></i>ABOUT US</a></li>
-                  <li><a href="#"><i class="bx bx-chevron-right"></i>CONTACT US</a></li>
+                  <li><a href="./index.html"><i class="fa-solid fa-chevron-right"></i> <span></span> HOME</a></li>
+                  <li><a href="./pages/products.html"><i class="fa-solid fa-chevron-right"></i><span></span> PRODUCTS</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i><span></span> ROMOS</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i><span></span> ABOUT US</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i><span></span> CONTACT US</a></li>
                 </ul>
             </div>
 
@@ -351,12 +411,12 @@ data-aos-duration="2800">
                     <button class="btn" type="submit"> Subscribe Now</button>
                   </span>
                 </div>
-                <div class="social-media mt-3" data-aos="fade-left"
+                <div class="social-media" data-aos="fade-left"
                 data-aos-duration="1500">
-                  <h5>Follow us</h5>
-                <a href="#" class="twitter"> <i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"> <i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"> <i class="bx bxl-instagram"></i></a>
+                  <h4>Follow us</h4>
+                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
               </div>
             </div>
           </div>
