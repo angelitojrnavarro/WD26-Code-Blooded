@@ -1,3 +1,124 @@
+.owl-carousel .item .card .card-img-top {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.owl-carousel .item .card:hover img {
+  transform: scale(0.9);
+}
+
+.item .card .card-body :hover {
+  transform: scale(1.1);
+}
+
+.product-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.product-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: white;
+  position: relative;
+  margin: 2rem;
+  width: 30rem;
+  border-radius: 10px;
+}
+
+.product-preview .preview.active {
+  display: inline-block;
+}
+
+.product-preview .preview img {
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 5px;
+  border-radius: 20pxs;
+}
+
+.product-preview .preview .description {
+  height: min-content;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.product-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: 0.6s ease;
+}
+
+.product-preview .preview .fa-times:hover {
+  transform: rotate(90deg);
+}
+
+.product-preview .preview .buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.product-preview .preview .buttons a {
+  flex: 1 2 1rem;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.product-preview .preview .buttons a.buy {
+  background-color: blue;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-preview .preview .buttons a.cart {
+  background-color: orange;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-preview .preview h3 {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.preview .description {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
+.preview .description p {
+  margin-top: 10px;
+}
+
+.preview .price {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,56 +207,6 @@ body {
   color: red;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  #brandLogo {
-    font-size: 18px;
-  }
-  #brandLogo span {
-    font-size: 18px;
-  }
-  #btn button {
-    margin-top: 15px;
-  }
-  #category .col img {
-    height: 250px;
-    width: 280px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .navbar-nav {
-    margin-left: 10px;
-  }
-  #btn button {
-    margin-top: 15px;
-  }
-  #category .col img {
-    height: 420px;
-    width: 410px;
-    margin: 10px;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1338px) {
-  #btn {
-    margin-right: 40px;
-    margin-left: 10px;
-    margin-top: 15px;
-  }
-  #btn button {
-    width: 90px;
-    height: 25px;
-    font-size: 15px;
-  }
-  #btn .fas {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-  }
-  .nav-link {
-    font-size: 16px;
-  }
-}
 .carousel-item {
   height: 52rem;
 }
@@ -264,6 +335,17 @@ body {
 
 .footer .footer-top .footer-contact h4 {
   font-family: "Ubuntu", sans-serif;
+}
+
+.footer-contact .footer-logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.footer-contact .footer-logo h4 {
+  margin-left: 10px;
 }
 
 .footer .footer-top .footer-contact p {
