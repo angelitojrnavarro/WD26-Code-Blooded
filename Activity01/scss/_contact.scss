@@ -1,0 +1,77 @@
+$btnFont:  'Poppins', sans-serif;
+$subTitleFont: 'Yantramanav', sans-serif;
+$TitleFont:  'Ubuntu', sans-serif;
+
+.contactUs{
+    height: min-content;
+}
+
+.titleHead h1{
+    font-family: $TitleFont;
+    font-weight: 600;
+    color: red;
+}
+
+.titleHead p{
+    font-family: $subTitleFont;
+    font-size: 1.2rem;
+}
+.messageWrapper{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.contactUs .container {
+    margin-top: 150px;
+}
+
+.messageWrapper .titleHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formWrapper .formWrap{
+    height: min-content;
+    width: 40%;
+  
+    padding: 10px;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    
+}
+
+.formWrapper .contactWrap{
+    height: min-content;
+    width: 60%;
+    background-color: whitesmoke;
+    padding: 40px;
+    margin-left: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: $subTitleFont;
+    font-weight: bold;
+
+}
+.formWrap .email{
+    display: flex;
+    justify-items: center; 
+    padding: 15px;
+    justify-content: space-around;
+}
+
+ .email .emailLogo img{
+    width: 80px;
+}
+
+.formWrap .email .emailContent{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}

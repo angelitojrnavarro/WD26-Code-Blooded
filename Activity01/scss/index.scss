@@ -1,6 +1,11 @@
 // @import 'mediaquery';
 
 @import 'products';
+@import 'contact';
+@import 'about';
+$btnFont:  'Poppins', sans-serif;
+$subTitleFont: 'Yantramanav', sans-serif;
+$TitleFont:  'Ubuntu', sans-serif;
 
 *{
     margin: 0;
@@ -172,7 +177,7 @@ color: black;
 
 // carousel slidder
 .carousel-item{
-    height: 52rem;
+    height: 45rem;
 }
 
 
@@ -187,6 +192,12 @@ color: black;
 }
 #category h5{
     font-family: 'Poppins', sans-serif;
+}
+#category .card img{
+   transition: 0.5s ease;
+}
+#category .card img:hover{
+    opacity: 0.6;
 }
 // .col img{
 //     height: 450px;
@@ -247,6 +258,9 @@ font-family: $btnFont;
 }
 
 // delivery
+#delivery{
+    height: min-content;
+}
 #delivery h1{
     @include headerfont;
     color: white;
@@ -260,20 +274,114 @@ font-family: $btnFont;
     color: yellow;
 }
 
-#delivery .col img{
-    height: 400px;
-    width: 420px;
-    @include shadow;
-    margin: 50px 0;
-    opacity: 0.5;
-    transition: 0.8s ease;
-    border-radius: 20px;
-    border: 5px solid yellow;
-}
-#delivery .col img:hover{
-    opacity: 1;
+// #delivery .col img{
+//     height: 400px;
+//     width: 420px;
+//     @include shadow;
+//     margin: 50px 0;
+//     opacity: 0.5;
+//     transition: 0.8s ease;
+//     border-radius: 20px;
+//     border: 5px solid yellow;
+// }
+// #delivery .col img:hover{
+//     opacity: 1;
+// }
+// #delivery .content .delContent{
+//     display: flex;
+//     margin-top: 50%;
+//     margin-bottom: 50%;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+
+//Delivery
+
+.delwarpper .delLogo{
+    width: 40%;
+    height: min-content;
+    padding: 50px 30px;
 }
 
+.delwarpper .delContent{
+    width: 60%;
+
+}
+
+ #delivery .delwarpper{
+    display: flex;
+    height: min-content;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.delLogo img{
+    width: 95%;
+}
+.delwarpper  .delContent{
+   padding: 3rem;
+
+   h4{
+    margin-top: 50px;
+    font-family: $subTitleFont;
+    font-weight: bold;
+   }
+   h2{
+    font-family: $TitleFont;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 500;
+   }
+   p{
+    font-family: $subTitleFont;
+   font-size: 1.2rem;
+   }
+}
+
+//rewards card
+
+.cardwrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cardcontent{
+        height: 250px;
+        width: 55%;
+        padding: 50px;
+
+
+        p{
+            font-family: $subTitleFont;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .applyNow{
+            width: 150px;
+            height: 40px;
+            font-family: $btnFont;
+            border: 3px solid yellow;
+            border-radius: 5px;
+            background: none;
+            color: yellow;
+        }
+    }
+    .cardlogo{
+        height: min-content;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 80%;
+        }
+    }
+}
 
 // footer
 .footer{

@@ -119,6 +119,154 @@
   font-size: 1.2rem;
 }
 
+.contactUs {
+  height: min-content;
+}
+
+.titleHead h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  color: red;
+}
+
+.titleHead p {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.2rem;
+}
+
+.messageWrapper {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.contactUs .container {
+  margin-top: 150px;
+}
+
+.messageWrapper .titleHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formWrapper .formWrap {
+  height: min-content;
+  width: 40%;
+  padding: 10px;
+}
+
+.formWrapper .contactWrap {
+  height: min-content;
+  width: 60%;
+  background-color: whitesmoke;
+  padding: 40px;
+  margin-left: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: bold;
+}
+
+.formWrap .email {
+  display: flex;
+  justify-items: center;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.email .emailLogo img {
+  width: 80px;
+}
+
+.formWrap .email .emailContent {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#about {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.abourWrapper {
+  height: min-content;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+.abourWrapper .store {
+  height: min-content;
+  width: 60%;
+  padding-top: 20px;
+}
+.abourWrapper .store img {
+  width: 700px;
+  height: 600px;
+  margin-bottom: 20px;
+}
+.abourWrapper .content {
+  height: min-content;
+  width: 40%;
+  padding: 30px;
+  text-align: justify;
+}
+.abourWrapper .content p {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.1rem;
+}
+.abourWrapper .content p span {
+  font-weight: bold;
+}
+.abourWrapper .content h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.testimonial {
+  background-color: yellow;
+}
+
+#testimonial {
+  height: 100vh;
+  padding: 50px;
+}
+#testimonial h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#testimonial h1 .span1 {
+  color: red;
+}
+#testimonial h1 .span2 {
+  text-transform: lowercase;
+}
+#testimonial h5 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#testimonial p {
+  font-family: "Yantramanav", sans-serif;
+  text-align: justify;
+}
+#testimonial i {
+  font-size: 1.3rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -208,7 +356,7 @@ body {
 }
 
 .carousel-item {
-  height: 52rem;
+  height: 45rem;
 }
 
 #category h1 {
@@ -226,6 +374,14 @@ body {
 
 #category h5 {
   font-family: "Poppins", sans-serif;
+}
+
+#category .card img {
+  transition: 0.5s ease;
+}
+
+#category .card img:hover {
+  opacity: 0.6;
 }
 
 .round-cakes h3 {
@@ -282,6 +438,10 @@ body {
   justify-content: space-between;
 }
 
+#delivery {
+  height: min-content;
+}
+
 #delivery h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
@@ -300,21 +460,82 @@ body {
   color: yellow;
 }
 
-#delivery .col img {
-  height: 400px;
-  width: 420px;
-  box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -6px 11px 17px -4px rgba(0, 0, 0, 0.75);
-  margin: 50px 0;
-  opacity: 0.5;
-  transition: 0.8s ease;
-  border-radius: 20px;
-  border: 5px solid yellow;
+.delwarpper .delLogo {
+  width: 40%;
+  height: min-content;
+  padding: 50px 30px;
 }
 
-#delivery .col img:hover {
-  opacity: 1;
+.delwarpper .delContent {
+  width: 60%;
+}
+
+#delivery .delwarpper {
+  display: flex;
+  height: min-content;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  align-items: center;
+}
+
+.delLogo img {
+  width: 95%;
+}
+
+.delwarpper .delContent {
+  padding: 3rem;
+}
+.delwarpper .delContent h4 {
+  margin-top: 50px;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: bold;
+}
+.delwarpper .delContent h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+  font-weight: 500;
+}
+.delwarpper .delContent p {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.2rem;
+}
+
+.cardwrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardwrapper .cardcontent {
+  height: 250px;
+  width: 55%;
+  padding: 50px;
+}
+.cardwrapper .cardcontent p {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+.cardwrapper .cardcontent .applyNow {
+  width: 150px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid yellow;
+  border-radius: 5px;
+  background: none;
+  color: yellow;
+}
+.cardwrapper .cardlogo {
+  height: min-content;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardwrapper .cardlogo img {
+  width: 80%;
 }
 
 .footer {
