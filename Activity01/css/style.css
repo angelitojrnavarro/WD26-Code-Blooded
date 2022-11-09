@@ -1,108 +1,62 @@
-section {
-  height: 100vh;
-  width: 100%;
-  background-color: #c7c9cc;
-  display: flex;
-}
+@charset "UTF-8";
+/*
 
-section form {
-  background-color: white;
-  height: min-content;
-  width: 380px;
-  margin: auto;
-  padding: 20px 30px;
-  border-radius: 15px;
-}
+    What do the mixins do? Avoid writing media query over and over again
+    They provide a semantic media query mixin for the following:
 
-section form h1 {
-  font-size: 2rem;
-  margin-top: 10px;
-}
+    Respond above XX.
+    Respond below XX.
+    Respond between XX and XX.
+    Where XX is the two letter Bootstrap breakpoint (i.e. sm, md).
 
-section form p {
-  color: #c7c9cc;
-}
+    Usual way: @media (min-width: 768px) and (max-width: 991px) {
+        Target devices between 768px and 992px. 
+    }
 
-section form span {
-  cursor: pointer;
-}
 
-section form .mb-1 .form-label {
-  font-size: 1rem;
-}
+*/
+/*
+    It’s best practice to use Bootstrap’s breakpoints in your own code but it’s painful to write them all the time. To get around that I use a Sass map of values:
+*/
+/*
+    This means the breakpoint values are only ever written once. Map values like these can be accessed using the Sass' map-get function:
+*/
+/*
 
-section form .btn {
-  margin-top: 10px;
-  width: 115px;
-  border-radius: 20px;
-}
+    Before going ahead and writing the media query it’s a good idea to ensure the key exists in the $breakpoints map in case you make a typo (i.e. @include respond-above(small)).
 
-section form .btn a {
-  color: white;
-  text-decoration: none;
-}
+    To do this we use Sass' map-has-key function
 
-section form .btnHolder {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+*/
+@media (min-width: 576px) {
+  .card {
+    display: block;
+  }
 }
+@media (max-width: 991px) {
+  .card {
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* 
+  Respond Between
+  - it checks both lower and upper keys exist in the breakpoints before writing this in the media query.
 
-section form .btnHolder p {
-  font-size: 0.8rem;
-  margin: auto;
-  cursor: pointer;
-}
-
-section form .loginWith .icon {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-section form .loginWith .icon img {
-  border-radius: 50%;
-  margin-bottom: 10px;
-}/*# sourceMappingURL=style.css.map */t: 100%;
-  z-index: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.navbar ul li:hover:before {
-  width: 10px;
-  left: -10px;
-}
-.navbar ul li:hover:after {
-  width: 100%;
-}
-
-p img {
-  border-radius: 50%;
-  margin-left: 5px;
-}
-
-.col-md-6 div {
-  margin-bottom: 10px;
-}
-
-.row .col {
-  margin: auto;
-}
-
-.row .socialMedia h4 {
-  display: block;
-}
-
-.socialMedia {
-  display: block;
-}
-
-.socialMedia p {
-  display: flex;
-  justify-content: flex-start;
+*/
+/*
+    Respond between
+    Here we want to check that both the $lower and $upper keys exist in the $breakpoints map before writing the media query.
+*/
+@media (min-width: 576px) and (max-width: 1399px) {
+  .card img {
+    display: block;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */;
   margin-left: 28px;
   margin-bottom: 20px;
 }

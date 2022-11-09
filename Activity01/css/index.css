@@ -1,3 +1,424 @@
+#navbar-bg {
+  background-color: yellow;
+  box-shadow: 0px -9px 4px 10px black;
+  border-bottom: 4px solid white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+#brandLogo {
+  font-size: 25px;
+  color: black;
+  text-shadow: 1px 1px 1px black;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 30px;
+}
+
+#brandLogo img {
+  margin-bottom: 10px;
+}
+
+#brandLogo span {
+  color: red;
+}
+
+.navbar-nav {
+  margin-left: 100px;
+}
+
+.nav-link {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: 0.6s ease;
+}
+
+.nav-link:hover {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+#btn {
+  display: flex;
+  gap: 5px;
+}
+
+#btn a {
+  text-decoration: none;
+  gap: 10px;
+}
+
+#btn button {
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  border-radius: 5px;
+  border-radius: 1px solid black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#btn .fas {
+  color: black;
+}
+#btn .shopcart {
+  display: flex;
+  align-items: center;
+}
+
+#btn button:hover {
+  background-color: red;
+  color: white;
+}
+
+#btn .fas:hover {
+  color: red;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  color: black;
+}
+
+#main-bg {
+  background-color: maroon;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.carousel-item {
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-indicators {
+  margin-top: 15000px;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 2px black;
+  color: white;
+}
+h1 span {
+  color: yellow;
+}
+
+.delivery .card-body {
+  margin-left: 26px;
+}
+.delivery .card-body h2 {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 25px;
+}
+.delivery .card-body p {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.delivery .card-body h4 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+.delivery .card-body img {
+  margin-left: 20px;
+}
+
+.rewards p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  margin: 80px 0;
+}
+
+.footer {
+  color: black;
+  font-size: 14px;
+  background-color: yellow;
+  border-top: 4px solid white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-top {
+  padding: 30px;
+}
+
+.footer .footer-top .footer-contact h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-contact .footer-logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.footer-contact .footer-logo h4 {
+  margin-left: 10px;
+}
+
+.footer .footer-top .footer-contact p {
+  font-family: "Yantramanav", sans-serif;
+}
+
+.footer .footer-top .footer-links h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-links ul li {
+  list-style: none;
+  font-family: "Yantramanav", sans-serif;
+  margin-top: 5px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  font-family: "Yantramanav", sans-serif;
+  color: black;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.footer-links ul li a:hover {
+  font-weight: bold;
+  background-color: red;
+  padding: 0 10px;
+  color: white;
+}
+
+.footer-links ul li a i {
+  margin-left: 10px;
+}
+
+.footer-social h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.social-media h4 {
+  margin-top: 15px;
+}
+
+.footer-social .input-group .btn {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  color: white;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.footer-social .input-group input {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.footer-social .social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  color: white;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.copyrigth {
+  background-color: maroon;
+}
+
+.copyrigthWrapper .copyrigth {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+}
+
+.copyrigthWrapper .copyrigth span {
+  font-weight: bold;
+  color: yellow;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  position: fixed;
+  height: 60px;
+  bottom: 40px;
+  right: 50px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+body {
+  background-color: maroon;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #brandLogo {
+    font-size: 1rem;
+  }
+  .navbar-toggler span {
+    font-size: 1rem;
+  }
+  .navbar-collapse {
+    display: block;
+  }
+  .navbar-collapse ul {
+    margin-left: 0;
+  }
+  .navbar-collapse li {
+    display: flex;
+  }
+  .navbar-collapse li a {
+    display: block;
+    font-size: 1rem;
+    padding: 5 10px;
+  }
+  .carousel-item {
+    margin-top: 75px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-collapse {
+    display: block;
+  }
+  .navbar-collapse ul {
+    margin-left: 0;
+  }
+  .navbar-collapse li {
+    display: flex;
+  }
+  .navbar-collapse li a {
+    display: block;
+    font-size: 1rem;
+    padding: 5 10px;
+  }
+  .carousel-item {
+    margin-top: 75px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-collapse .navbar-nav {
+    margin-left: 20px;
+  }
+  .navbar-collapse a {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+  .navbar-collapse #btn {
+    display: block;
+    gap: 5px;
+  }
+  .navbar-collapse #btn button {
+    height: 1.5rem;
+    font-size: 0.8rem;
+    width: 4.8rem;
+  }
+  .navbar-collapse #btn .shopcart {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .carousel-item {
+    margin-top: 75px;
+  }
+  #feturedProducts h5 {
+    font-size: 14px;
+  }
+  #feturedProducts .card-footer .btn {
+    font-size: 12px;
+  }
+  .owl-carousel h5 {
+    font-size: 14px;
+  }
+  .owl-carousel .card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .owl-carousel .card-footer .btn {
+    font-size: 12px;
+  }
+  .owl-carousel .card-footer .btn-primary {
+    width: 100%;
+  }
+  .owl-carousel .card-footer .btn-warning {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .navbar-collapse .navbar-nav {
+    justify-content: space-evenly;
+  }
+  .navbar-collapse a {
+    font-size: 1rem;
+    margin-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .navbar-collapse #btn button {
+    margin-top: 5px;
+  }
+  .navbar-collapse #btn .fas {
+    margin-left: 50px;
+  }
+  .carousel-item {
+    margin-top: 75px;
+  }
+  #feturedProducts h5 {
+    font-size: 14px;
+  }
+  #feturedProducts .card-footer .btn {
+    font-size: 12px;
+  }
+  .owl-carousel h5 {
+    font-size: 14px;
+  }
+  .owl-carousel .card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .owl-carousel .card-footer .btn {
+    font-size: 12px;
+  }
+  .owl-carousel .card-footer .btn-primary {
+    width: 100%;
+  }
+  .owl-carousel .card-footer .btn-warning {
+    width: 100%;
+  }
+}
 .owl-carousel .item .card .card-img-top {
   transition: 0.5s ease;
   cursor: pointer;
@@ -119,8 +540,81 @@
   font-size: 1.2rem;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.About {
+  background-color: white;
+}
+.About #about {
+  margin-bottom: 50px;
+  height: min-content;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+}
+.About #about .card {
+  border: none;
+  gap: 10;
+}
+.About #about .card h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+.About #about .card p {
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: justify;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 1.3rem;
+}
+.About #about .card p .brand {
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.About #about .card p span {
+  font-weight: bold;
+}
+
+.testimonial {
+  background-color: yellow;
+}
+
+#testimonial {
+  min-height: 100vh;
+  padding: 50px;
+}
+#testimonial h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#testimonial h1 .span1 {
+  color: red;
+}
+#testimonial h1 .span2 {
+  text-transform: lowercase;
+}
+#testimonial h5 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#testimonial p {
+  font-family: "Yantramanav", sans-serif;
+  text-align: justify;
+}
+#testimonial i {
+  font-size: 1.3rem;
+}
+
 .contactUs {
   height: min-content;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .titleHead h1 {
@@ -191,479 +685,9 @@
   justify-items: center;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-#about {
-  margin-top: 120px;
-  margin-bottom: 50px;
-}
-
-.abourWrapper {
-  height: min-content;
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
-}
-.abourWrapper .store {
-  height: min-content;
-  width: 60%;
-  padding-top: 20px;
-}
-.abourWrapper .store img {
-  width: 700px;
-  height: 600px;
-  margin-bottom: 20px;
-}
-.abourWrapper .content {
-  height: min-content;
-  width: 40%;
-  padding: 30px;
-  text-align: justify;
-}
-.abourWrapper .content p {
-  font-family: "Yantramanav", sans-serif;
-  font-size: 1.1rem;
-}
-.abourWrapper .content p span {
-  font-weight: bold;
-}
-.abourWrapper .content h3 {
-  font-family: "Ubuntu", sans-serif;
-}
-
-.testimonial {
-  background-color: yellow;
-}
-
-#testimonial {
-  height: 100vh;
-  padding: 50px;
-}
-#testimonial h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-#testimonial h1 .span1 {
-  color: red;
-}
-#testimonial h1 .span2 {
-  text-transform: lowercase;
-}
-#testimonial h5 {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-}
-#testimonial p {
-  font-family: "Yantramanav", sans-serif;
-  text-align: justify;
-}
-#testimonial i {
-  font-size: 1.3rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: maroon;
-}
-
-#navbar-bg {
-  background-color: yellow;
-  box-shadow: 0px -9px 4px 10px black;
-  border-bottom: 4px solid white;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-}
-
-#brandLogo {
-  font-size: 25px;
-  color: black;
-  text-shadow: 1px 1px 1px black;
-  font-family: "Ubuntu", sans-serif;
-}
-
-#brandLogo img {
-  margin-bottom: 10px;
-}
-
-#brandLogo span {
-  color: red;
-}
-
-.navbar-nav {
-  margin-left: 100px;
-}
-
-.nav-link {
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  margin-left: 10px;
-  transition: 0.6s ease;
-}
-
-.nav-link:hover {
-  background-color: red;
-  color: white;
-  border-radius: 5px;
-}
-
-#btn a {
-  text-decoration: none;
-}
-
-#btn button {
-  width: 120px;
-  height: 30px;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  background: none;
-  border-radius: 5px;
-  border-radius: 1px solid black;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-
-#btn .fas {
-  margin-left: 5px;
-  color: black;
-}
-
-#btn button:hover {
-  background-color: red;
-  color: white;
-}
-
-#btn .fas:hover {
-  color: red;
-}
-
-.carousel-item {
-  height: 54rem;
-}
-
-#category h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  text-shadow: -2px 3px 2px black;
-  color: white;
-}
-
-#category h1 span {
-  color: yellow;
-}
-
-#category h5 {
-  font-family: "Poppins", sans-serif;
-}
-
-#category .card img {
-  transition: 0.5s ease;
-}
-
-#category .card img:hover {
-  opacity: 0.6;
-}
-
-.round-cakes h3 {
-  background-color: whitesmoke;
-}
-
-.feturedProduct {
-  background-color: whitesmoke;
-  margin-top: 50px;
-  padding: 10px;
-}
-
-#feturedProducts h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  text-shadow: -2px 3px 2px black;
-  color: red;
-}
-
-.feturedProduct #feturedProducts span {
-  color: yellow;
-}
-
-.checked {
-  color: red;
-}
-
-#feturedProducts .card-body p {
-  font-family: "Yantramanav", sans-serif;
-}
-
-#feturedProducts .card {
-  cursor: pointer;
-}
-
-#feturedProducts .card:hover img {
-  opacity: 0.5;
-}
-
-.card h5, h6 {
-  font-weight: "Yantramanav", sans-serif;
-}
-
-.card .btn {
-  font-family: "Poppins", sans-serif;
-}
-
-.card .card-footer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-content: space-between;
-}
-
-#delivery {
-  height: min-content;
-}
-
-#delivery h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  text-shadow: -2px 3px 2px black;
-  color: white;
-}
-
-#delivery h3 {
-  color: white;
-  font-family: "Yantramanav", sans-serif;
-}
-
-#delivery h1 span {
-  color: yellow;
-}
-
-.delwarpper .delLogo {
-  width: 40%;
-  height: min-content;
-  padding: 50px 30px;
-}
-
-.delwarpper .delContent {
-  width: 60%;
-}
-
-#delivery .delwarpper {
-  display: flex;
-  height: min-content;
-  justify-content: center;
-  margin-top: 50px;
-  background-color: whitesmoke;
-  align-items: center;
-}
-
-.delLogo img {
-  width: 95%;
-}
-
-.delwarpper .delContent {
-  padding: 3rem;
-}
-.delwarpper .delContent h4 {
-  margin-top: 50px;
-  font-family: "Yantramanav", sans-serif;
-  font-weight: bold;
-}
-.delwarpper .delContent h2 {
-  font-family: "Ubuntu", sans-serif;
-  color: red;
-  text-shadow: 1px 1px 1px black;
-  font-weight: 500;
-}
-.delwarpper .delContent p {
-  font-family: "Yantramanav", sans-serif;
-  font-size: 1.2rem;
-}
-
-.cardwrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cardwrapper .cardcontent {
-  height: 250px;
-  width: 55%;
-  padding: 50px;
-}
-.cardwrapper .cardcontent p {
-  font-family: "Yantramanav", sans-serif;
-  font-size: 1.2rem;
-  color: white;
-}
-.cardwrapper .cardcontent .applyNow {
-  width: 150px;
-  height: 40px;
-  font-family: "Poppins", sans-serif;
-  border: 3px solid yellow;
-  border-radius: 5px;
-  background: none;
-  color: yellow;
-}
-.cardwrapper .cardlogo {
-  height: min-content;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cardwrapper .cardlogo img {
-  width: 80%;
-}
-
-.footer {
-  color: black;
-  font-size: 14px;
-  background-color: yellow;
-  border-top: 4px solid white;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 50px;
-}
-
-.footer .footer-top {
-  padding: 30px;
-}
-
-.footer .footer-top .footer-contact h4 {
-  font-family: "Ubuntu", sans-serif;
-}
-
-.footer-contact .footer-logo {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.footer-contact .footer-logo h4 {
-  margin-left: 10px;
-}
-
-.footer .footer-top .footer-contact p {
-  font-family: "Yantramanav", sans-serif;
-}
-
-.footer .footer-top .footer-links h4 {
-  font-family: "Ubuntu", sans-serif;
-}
-
-.footer-links ul li {
-  list-style: none;
-  font-family: "Yantramanav", sans-serif;
-  margin-top: 5px;
-}
-
-.footer-links ul li a {
-  text-decoration: none;
-  font-family: "Yantramanav", sans-serif;
-  color: black;
-  border-radius: 5px;
-  transition: 0.5s ease;
-}
-
-.footer-links ul li a:hover {
-  font-weight: bold;
-  background-color: red;
-  padding: 0 10px;
-  color: white;
-}
-
-.footer-links ul li a i {
-  margin-left: 10px;
-}
-
-.footer-social h4 {
-  font-family: "Ubuntu", sans-serif;
-}
-
-.social-media h4 {
-  margin-top: 15px;
-}
-
-.footer-social .input-group .btn {
-  font-family: "Poppins", sans-serif;
-  background-color: red;
-  color: white;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-}
-
-.footer-social .input-group input {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  font-family: "Yantramanav", sans-serif;
-}
-
-.footer-social .social-media a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: red;
-  color: white;
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-}
-
-.footer .container .copyrigth {
-  background-color: red;
-}
-
-.copyrigthWrapper .copyrigth {
-  font-family: "Yantramanav", sans-serif;
-  color: white;
-}
-
-.copyrigthWrapper .copyrigth span {
-  font-weight: bold;
-  color: yellow;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.arrow {
-  position: fixed;
-  height: 60px;
-  bottom: 40px;
-  right: 50px;
-  background-color: white;
-  border-radius: 50%;
-  opacity: 0.6;
-}
-
-.arrow:hover {
-  opacity: 1;
+#contact_Us {
+  padding-left: 30px;
+}
+#contact_Us .card {
+  border: none;
 }/*# sourceMappingURL=index.css.map */

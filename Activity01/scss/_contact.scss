@@ -4,6 +4,9 @@ $TitleFont:  'Ubuntu', sans-serif;
 
 .contactUs{
     height: min-content;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .titleHead h1{
@@ -74,4 +77,11 @@ $TitleFont:  'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
     justify-items: center;
+}
+
+#contact_Us{
+    padding-left: 30px;
+    .card{
+        border: none;
+    }
 }

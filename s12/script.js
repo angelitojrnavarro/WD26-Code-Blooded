@@ -51,3 +51,8 @@ myCopy = "test";
 
 let name = 'tolits';
 console.log(name);
+
+let ex = 75.68;
+console.log(parseInt("75.68"));
+console.log(parseFloat("75.68"));
+console.log(parseInt("75.68").toFixed(2));
