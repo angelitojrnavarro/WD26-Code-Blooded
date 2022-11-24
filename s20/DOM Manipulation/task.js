@@ -1,9 +1,6 @@
+let addButton = document.querySelector("#btnAdd"); //add button
 
-
-let Addbutton = document.querySelector("#btnAdd"); //add button
-
-
-Addbutton.addEventListener("click", () =>{
+addButton.addEventListener("click", () =>{
    let  userInput = document.querySelector("#userInput").value;
    let todo = document.querySelector("#todo"); //ul
 
@@ -25,9 +22,14 @@ Addbutton.addEventListener("click", () =>{
    document.querySelector("#userInput").value="";
 });
 
-let delButton = document.querySelector("#btnDel").addEventListener("click", (e) =>{
 
-           document.querySelector("li").removeChild(e.target);
-       
-   
-});
+let delButton = document.querySelector("#btnDel");
+delButton.addEventListener("click", () =>{
+    
+        let del = [].slice.call(document.querySelectorAll("#todo li"));   
+                del.filter(function(e) {
+               return e.firstChild.checked
+                }).forEach(function(e) {
+             e.remove();
+          })
+      })
